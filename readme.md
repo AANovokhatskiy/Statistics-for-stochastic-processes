@@ -21,7 +21,7 @@ The following models are descibed:
     ```
 3. CKLS - Chan-Karolyi-Longstaff-Sanders
     ```math
-        dxt = (\theta_1 + \theta_2 * x_t) dt + \theta_3 x_t^\theta_4 dW_t
+        dxt = (\theta_1 + \theta_2 x_t) dt + \theta_3 x_t^{\theta_4} dW_t
     ```
 4. HW - Hull-White
     ```math
