@@ -4,29 +4,30 @@ dx_t = b(x_t, t)dt + \sigma(x_t, t)dW_t
 ```
 
 The program code includes the implementation
-    1. Numerical schemes of integration (Euler, Milstein 1, Milstein 2, Predictor-corrector)
-    2. Sampling from transition density
-    3. Parameter estimation (Euler, Ozaki, ShojiOzaki, Kessler)
-    4. Non parametric stationary density estimation
-    5. Non parametric drift and diffusion coefficients estimation
+1. Numerical schemes of integration (Euler, Milstein 1, Milstein 2, Predictor-corrector)
+2. Sampling from transition density
+3. Parameter estimation (Euler, Ozaki, ShojiOzaki, Kessler)
+4. Non parametric stationary density estimation
+5. Non parametric drift and diffusion coefficients 
+
 The following models are descibed:
-    1. OU - Ornstein-Uhlenbeck
+1. OU - Ornstein-Uhlenbeck
     ```math
         dx_t = \theta (\mu - x_t) dt + \nu dW_t
     ```
-    2. CIR - Cox-Ingersoll-Ross
+2. CIR - Cox-Ingersoll-Ross
     ```math
         dx_t = (\theta_1 - \theta_2 x_t) dt + \theta_3 \sqrt(x_t)dW_t
     ```
-    3. CKLS - Chan-Karolyi-Longstaff-Sanders
+3. CKLS - Chan-Karolyi-Longstaff-Sanders
     ```math
         dxt = (\theta_1 + \theta_2 * x_t) dt + \theta_3 x_t^\theta_4 dW_t
     ```
-    4. HW - Hull-White
+4. HW - Hull-White
     ```math
         dx_t = \theta_1 t (\theta_2 \sqrt(t) - x_t) dt + \theta_3 t dW_t
     ```
-    5. BSM - Black–Scholes–Merton
+5. BSM - Black–Scholes–Merton
     ```math
         dx_t = r x_t dt + \sigma x_t dW_t
     ```
@@ -54,5 +55,5 @@ t, xt = process.SolutionEuler(dwt)
 The project is made in Sirius University, Sochi, Russia; "Financial mathematics and financial technologies" department as a part of Statistics for stochastic processes academical course.
 
 For the matematical description see
-M.E. Semenov, G.V. Fedorov, Statistics for stochastic processes
-S.M. Iacus, Simulation and Inference for Stochastic Differential Equations with R Examples
+1. M.E. Semenov, G.V. Fedorov, Statistics for stochastic processes
+2. S.M. Iacus, Simulation and Inference for Stochastic Differential Equations with R Examples
