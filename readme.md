@@ -17,7 +17,7 @@ The following models are descibed:
     ```
 2. CIR - Cox-Ingersoll-Ross
     ```math
-        dx_t = (\theta_1 - \theta_2 x_t) dt + \theta_3 \sqrt(x_t)dW_t
+        dx_t = (\theta_1 - \theta_2 x_t) dt + \theta_3 \sqrt{x_t} dW_t
     ```
 3. CKLS - Chan-Karolyi-Longstaff-Sanders
     ```math
@@ -25,7 +25,7 @@ The following models are descibed:
     ```
 4. HW - Hull-White
     ```math
-        dx_t = \theta_1 t (\theta_2 \sqrt(t) - x_t) dt + \theta_3 t dW_t
+        dx_t = \theta_1 t (\theta_2 \sqrt{t} - x_t) dt + \theta_3 t dW_t
     ```
 5. BSM - Black–Scholes–Merton
     ```math
