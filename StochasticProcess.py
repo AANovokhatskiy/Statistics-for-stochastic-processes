@@ -20,6 +20,7 @@ class StochasticProcess:
         4. Non parametric stationary density estimation
         5. Non parametric drift and diffusion coefficients estimation
        '''
+    __slots__ = ('params', 'T', 'Nx', 'Nt', 'InitState')
     def __init__(self, params: np.array, T: float, Nx: int, Nt: int, InitState: np.array = None):
         self.params = np.array(params)
         self.T = T

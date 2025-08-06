@@ -8,7 +8,7 @@ The program code includes the implementation
 2. Sampling from transition density
 3. Parameter estimation (Euler, Ozaki, ShojiOzaki, Kessler)
 4. Non parametric stationary density estimation
-5. Non parametric drift and diffusion coefficients 
+5. Non parametric estimation of drift and diffusion coefficients 
 
 The following models are descibed:
 1. OU - Ornstein-Uhlenbeck
@@ -44,7 +44,7 @@ params = [theta, mu, nu]
 process = OUProcess(params, T, Nx, Nt)
 
 '''Set stationary state as init state (if need)'''
-process.init_state = process.StationaryState()
+process.InitState = process.StationaryState()
 
 '''get the solution'''
 '''set dwt to fix Wiener process (if need)'''

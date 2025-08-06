@@ -3,6 +3,7 @@ import numpy as np
 from numba import njit
 
 class BSMProcess(StochasticProcess):
+    __slots__ = ()
     def __init__(self, params, T, Nx, Nt, InitState = None):
         super().__init__(params, T, Nx, Nt, InitState)
 

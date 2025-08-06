@@ -4,10 +4,8 @@ from numba import njit
 from scipy.stats import ncx2
 
 class CIRProcess(StochasticProcess):
+    __slots__ = ()
     def __init__(self, params, T, Nx, Nt, InitState = None):
-        '''A definition class for Cox-Ingersoll-Ross stochastic process 
-        dxt = (theta1 - theta2 * xt) * dt + theta3 * sqrt(xt) * dWt
-        '''
         super().__init__(params, T, Nx, Nt, InitState)
 
     # params = [theta1, theta2, theta3]
